@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Vaccinations | Complete Vaccination Guide & Information</title>
+    <meta name="description" content="Comprehensive vaccination information, schedules, and health guidance. Expert medical advice for all ages. Stay protected with up-to-date vaccine information.">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Meta Tags for SEO -->
+    <meta property="og:title" content="Health Vaccinations | Complete Vaccination Guide">
+    <meta property="og:description" content="Expert vaccination information and health guidance for all ages.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d550f87b3?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://healthvaccinations.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo::before {
+            content: "🏥";
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            position: relative;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #2563eb;
+            padding: 15px 30px;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 99, 235, 0.3);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1576091160399-112ba8d550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: #2563eb;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: #f9fafb;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Vaccination Guide Section */
+        .vaccination-guide {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .guide-card {
+            background: #f9fafb;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .guide-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .guide-image.adults {
+            background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .guide-image.children {
+            background-image: url('https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .guide-image.travel {
+            background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .guide-content {
+            padding: 2rem;
+        }
+
+        .guide-content h3 {
+            font-size: 1.3rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .guide-content p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .guide-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-features li {
+            padding: 0.5rem 0;
+            color: #374151;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .guide-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            padding: 15px 30px;
+            background: white;
+            color: #2563eb;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: #f9fafb;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #3b82f6;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        /* Trust badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 25px;
+            color: #2563eb;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .medical-disclaimer {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #92400e;
+        }
+
+        /* Additional medical image styling */
+        .medical-image-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .medical-image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Health Vaccinations</a>
+            <ul class="nav-links">
+                <li><a href="#services">Information</a></li>
+                <li><a href="#guide">Guides</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Information</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Complete Vaccination Information & Guidance</h1>
+                    <p>Access comprehensive, up-to-date vaccination information for all ages. Expert guidance on immunization schedules, travel vaccines, and health protection.</p>
+                    <div class="hero-buttons">
+                        <a href="#guide" class="btn-primary">Explore Guides</a>
+                        <a href="#contact" class="btn-secondary">Ask Experts</a>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <span>🏥</span> Medical Expert Reviewed
+                        </div>
+                        <div class="trust-badge">
+                            <span>📊</span> Evidence-Based
+                        </div>
+                        <div class="trust-badge">
+                            <span>🔄</span> Regularly Updated
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50M+</h3>
+                    <p>Lives Saved by Vaccines</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Effectiveness Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>200+</h3>
+                    <p>Countries Covered</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Information Access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vaccination Information Services</h2>
+                <p>Comprehensive resources and expert guidance for all your vaccination needs and questions.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3>Vaccination Schedules</h3>
+                    <p>Complete immunization schedules for infants, children, adults, and seniors based on current medical guidelines.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Travel Vaccines</h3>
+                    <p>Country-specific vaccination requirements and recommendations for international travel and relocation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Health Consultations</h3>
+                    <p>Connect with qualified healthcare professionals for personalized vaccination advice and planning.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Vaccine Reminders</h3>
+                    <p>Automated reminders and tracking system to keep your family's vaccinations up to date.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vaccination Guide Section -->
+    <section class="vaccination-guide" id="guide">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vaccination Guides</h2>
+                <p>Expert-reviewed guides covering all aspects of vaccination for different life stages and situations.</p>
+            </div>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="guide-image adults"></div>
+                    <div class="guide-content">
+                        <h3>Adult Vaccination Guide</h3>
+                        <p>Complete guide to adult immunizations including boosters, seasonal vaccines, and occupational requirements.</p>
+                        <ul class="guide-features">
+                            <li>Age-specific recommendations</li>
+                            <li>Booster schedules</li>
+                            <li>Occupational vaccines</li>
+                            <li>Pregnancy considerations</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Download Guide</a>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-image children"></div>
+                    <div class="guide-content">
+                        <h3>Child Vaccination Guide</h3>
+                        <p>Essential information for parents on childhood immunizations, schedules, and safety information.</p>
+                        <ul class="guide-features">
+                            <li>Birth to 18 years schedule</li>
+                            <li>School requirements</li>
+                            <li>Safety information</li>
+                            <li>Side effect management</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Download Guide</a>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-image travel"></div>
+                    <div class="guide-content">
+                        <h3>Travel Vaccination Guide</h3>
+                        <p>Country-specific vaccination requirements and health recommendations for international travelers.</p>
+                        <ul class="guide-features">
+                            <li>200+ country information</li>
+                            <li>Required vs recommended</li>
+                            <li>Timeline planning</li>
+                            <li>Health certificates</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Download Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Medical Images Gallery -->
+    <section class="medical-gallery" style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Medical Excellence & Safety</h2>
+                <p>Professional healthcare standards and safety protocols in vaccination services.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 3rem;">
+                <div class="medical-image-card" style="height: 250px; background: url('https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem 1rem 1rem; font-weight: 600;">
+                        Professional Medical Care
+                    </div>
+                </div>
+                <div class="medical-image-card" style="height: 250px; background: url('https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem 1rem 1rem; font-weight: 600;">
+                        Child-Friendly Environment
+                    </div>
+                </div>
+                <div class="medical-image-card" style="height: 250px; background: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem 1rem 1rem; font-weight: 600;">
+                        Expert Medical Consultation
+                    </div>
+                </div>
+                <div class="medical-image-card" style="height: 250px; background: url('https://images.unsplash.com/photo-1582560475093-ba66ac2b04fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem 1rem 1rem; font-weight: 600;">
+                        Modern Medical Facilities
+                    </div>
+                </div>
+                <div class="medical-image-card" style="height: 250px; background: url('https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem 1rem 1rem; font-weight: 600;">
+                        Global Health Standards
+                    </div>
+                </div>
+                <div class="medical-image-card" style="height: 250px; background: url('https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem 1rem 1rem; font-weight: 600;">
+                        Research & Development
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated on Health Information</h2>
+            <p>Get the latest vaccination news, health alerts, and expert insights delivered to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Expert Vaccination Information</h2>
+                <p>Have questions about vaccinations? Our medical experts are here to help with accurate, up-to-date information.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Medical Information Services</h3>
+                    <p>Our team of healthcare professionals provides reliable vaccination information and guidance.</p>
+                    
+                    <div class="medical-disclaimer">
+                        <strong>Medical Disclaimer:</strong> This website provides general information only. Always consult with qualified healthcare professionals for personalized medical advice and vaccination decisions.
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h4 style="color: #2563eb; margin-bottom: 1rem;">Information Services</h4>
+                        <p><strong>Email:</strong> info@healthvaccinations.com</p>
+                        <p><strong>Research Inquiries:</strong> research@healthvaccinations.com</p>
+                        <p><strong>Partnership:</strong> partners@healthvaccinations.com</p>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h4 style="color: #2563eb; margin-bottom: 1rem;">Coverage Areas</h4>
+                        <p>• Global vaccination guidelines</p>
+                        <p>• Travel health requirements</p>
+                        <p>• Occupational health programs</p>
+                        <p>• Public health initiatives</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">Inquiry Type *</label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">Select inquiry type</option>
+                            <option value="general-info">General Vaccination Information</option>
+                            <option value="travel-vaccines">Travel Vaccination Requirements</option>
+                            <option value="child-vaccines">Childhood Immunizations</option>
+                            <option value="adult-vaccines">Adult Vaccination Schedule</option>
+                            <option value="occupational">Occupational Health Requirements</option>
+                            <option value="pregnancy">Pregnancy and Vaccinations</option>
+                            <option value="medical-conditions">Special Medical Conditions</option>
+                            <option value="side-effects">Vaccine Safety and Side Effects</option>
+                            <option value="healthcare-provider">Healthcare Provider Resources</option>
+                            <option value="research">Research and Data Requests</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Country/Region</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your country or region">
+                    </div>
+                    <div class="form-group">
+                        <label for="profession">Profession (if healthcare related)</label>
+                        <select id="profession" name="profession">
+                            <option value="">Select profession</option>
+                            <option value="doctor">Medical Doctor</option>
+                            <option value="nurse">Nurse</option>
+                            <option value="pharmacist">Pharmacist</option>
+                            <option value="public-health">Public Health Professional</option>
+                            <option value="researcher">Medical Researcher</option>
+                            <option value="student">Medical Student</option>
+                            <option value="healthcare-admin">Healthcare Administrator</option>
+                            <option value="travel-medicine">Travel Medicine Specialist</option>
+                            <option value="occupational-health">Occupational Health</option>
+                            <option value="other-healthcare">Other Healthcare Professional</option>
+                            <option value="not-healthcare">Not Healthcare Related</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization/Institution</label>
+                        <input type="text" id="organization" name="organization" placeholder="Enter your organization name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Specific Question or Request *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your vaccination question, research needs, or information request..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes">
+                            Subscribe to health updates and vaccination news
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="disclaimer" value="acknowledged" required>
+                            I understand this is for informational purposes only and does not replace professional medical advice *
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Submit Information Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Health Vaccinations</h3>
+                    <p>Providing reliable, evidence-based vaccination information and health guidance for individuals, families, and healthcare professionals worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Information Categories</h3>
+                    <a href="#guide">Adult Vaccinations</a>
+                    <a href="#guide">Child Immunizations</a>
+                    <a href="#guide">Travel Vaccines</a>
+                    <a href="#guide">Occupational Health</a>
+                    <a href="#guide">Pregnancy & Vaccines</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#services">Vaccination Schedules</a>
+                    <a href="#services">Safety Information</a>
+                    <a href="#services">Research Data</a>
+                    <a href="#services">Healthcare Provider Tools</a>
+                    <a href="#services">Public Health Guidelines</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Professional Services</h3>
+                    <p>Email: info@healthvaccinations.com</p>
+                    <p>Research: research@healthvaccinations.com</p>
+                    <p>Partnerships: partners@healthvaccinations.com</p>
+                    <p>Global Coverage: 200+ Countries</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Health Vaccinations. All rights reserved. | Medical information for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced form submission with lead qualification
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // Calculate lead value based on inquiry type and profession
+            let leadValue = 0;
+            let leadType = "General Inquiry";
+            
+            // Professional scoring
+            if (data.profession === "doctor") leadValue += 50;
+            else if (data.profession === "nurse" || data.profession === "pharmacist") leadValue += 30;
+            else if (data.profession === "public-health" || data.profession === "researcher") leadValue += 40;
+            else if (data.profession === "healthcare-admin") leadValue += 35;
+            
+            // Inquiry type scoring
+            if (data['inquiry-type'] === "research") leadValue += 40;
+            else if (data['inquiry-type'] === "partnership") leadValue += 45;
+            else if (data['inquiry-type'] === "healthcare-provider") leadValue += 35;
+            else if (data['inquiry-type'] === "occupational") leadValue += 30;
+            
+            // Organization scoring
+            if (data.organization && data.organization.length > 0) leadValue += 20;
+            
+            // Determine lead type and value
+            if (leadValue >= 80) leadType = "Premium Healthcare Lead ($200-500)";
+            else if (leadValue >= 50) leadType = "Professional Lead ($100-250)";
+            else if (leadValue >= 25) leadType = "Qualified Lead ($50-150)";
+            else leadType = "General Inquiry ($25-75)";
+            
+            // Track the lead
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'medical_lead_generated', {
+                    'event_category': 'lead_generation',
+                    'event_label': leadType,
+                    'value': leadValue
+                });
+            }
+            
+            // Create lead summary
+            const leadSummary = `
+MEDICAL/HEALTH LEAD CAPTURED - ${leadType}
+==========================================
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Profession: ${data.profession || 'Not specified'}
+Organization: ${data.organization || 'Not provided'}
+Location: ${data.location || 'Not specified'}
+Inquiry Type: ${data['inquiry-type']}
+Lead Score: ${leadValue}/100
+Estimated Value: ${leadType}
+
+Specific Request:
+${data.message}
+
+Newsletter: ${data.newsletter ? 'Yes' : 'No'}
+Disclaimer Acknowledged: ${data.disclaimer ? 'Yes' : 'No'}
+==========================================
+            `;
+            
+            console.log(leadSummary);
+            
+            // Show response based on lead quality
+            let responseMessage = "Thank you for your inquiry! ";
+            if (leadValue >= 80) {
+                responseMessage += "A senior medical information specialist will respond to your request within 4 hours.";
+            } else if (leadValue >= 50) {
+                responseMessage += "Our medical information team will respond within 24 hours with the requested information.";
+            } else {
+                responseMessage += "We'll send you the relevant vaccination information within 48 hours.";
+            }
+            
+            alert(responseMessage);
+            e.target.reset();
+        });
+
+        // Newsletter form submission
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = e.target.querySelector('input[type="email"]').value;
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'newsletter_signup', {
+                    'event_category': 'engagement',
+                    'event_label': 'health_newsletter'
+                });
+            }
+            
+            alert('Thank you for subscribing! You\'ll receive the latest health and vaccination updates.');
+            e.target.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.borderBottom = '1px solid #e5e7eb';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observe all cards and sections
+        document.querySelectorAll('.service-card, .guide-card, .section-title, .stat-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate stats on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const stat = entry.target.querySelector('h3');
+                    const text = stat.textContent;
+                    const number = parseInt(text.replace(/\D/g, ''));
+                    const suffix = text.replace(/\d/g, '');
+                    
+                    let currentNumber = 0;
+                    const increment = number / 100;
+                    
+                    const timer = setInterval(() => {
+                        currentNumber += increment;
+                        if (currentNumber >= number) {
+                            stat.textContent = number + suffix;
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(currentNumber) + suffix;
+                        }
+                    }, 30);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-item').forEach(el => {
+            statsObserver.observe(el);
+        });
+
+        // Track guide downloads
+        document.querySelectorAll('.guide-card .btn-primary').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const guideName = this.closest('.guide-card').querySelector('h3').textContent;
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'guide_download_interest', {
+                        'event_category': 'engagement',
+                        'event_label': guideName
+                    });
+                }
+                
+                // Scroll to contact form for lead capture
+                document.querySelector('#contact').scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Pre-fill the inquiry type
+                const inquirySelect = document.querySelector('#inquiry-type');
+                if (guideName.includes('Adult')) {
+                    inquirySelect.value = 'adult-vaccines';
+                } else if (guideName.includes('Child')) {
+                    inquirySelect.value = 'child-vaccines';
+                } else if (guideName.includes('Travel')) {
+                    inquirySelect.value = 'travel-vaccines';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+            
