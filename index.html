@@ -1,5 +1,5 @@
 <div style="margin-top: 2rem;">
-                        <p><strong>Email:</strong> info@healthvaccinations.com</p>
+                        <p><strong>Email:</strong> abdessamadtalha@outlook.com</p>
                         <div class="ssl-badge">Secure & Confidential Communication</div>
                     </div><!DOCTYPE html>
 <html lang="en">
@@ -875,8 +875,9 @@
         <div class="container">
             <h2>Stay Updated on Health Information</h2>
             <p>Get the latest vaccination news, health alerts, and expert insights delivered to your inbox.</p>
-            <form class="newsletter-form" id="newsletterForm" action="https://formspree.io/f/mblkbjkn" method="POST">
-                <input type="email" placeholder="Enter your email address" required>
+            <form class="newsletter-form" id="newsletterForm" action="mailto:abdessamadtalha@outlook.com" method="post" enctype="text/plain">
+                <input type="hidden" name="_subject" value="Newsletter Subscription - Health Vaccinations">
+                <input type="email" name="email" placeholder="Enter your email address" required>
                 <button type="submit">Subscribe</button>
             </form>
         </div>
@@ -922,7 +923,10 @@
                         <p>• Public health initiatives</p>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mblkbjkn" method="POST">
+                <form class="contact-form" id="contactForm" action="mailto:abdessamadtalha@outlook.com" method="post" enctype="text/plain">
+                    <input type="hidden" name="_subject" value="New Health Vaccination Lead">
+                    <input type="hidden" name="_next" value="https://healthvaccinations.com/thank-you.html">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="form-group">
                         <label for="name">Full Name *</label>
                         <input type="text" id="name" name="name" required placeholder="Enter your full name">
@@ -994,7 +998,7 @@
                             I understand this is for informational purposes only and does not replace professional medical advice *
                         </label>
                     </div>
-                    <button type="submit" class="btn-primary" style="width: 100%;">Submit Information Request</button>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Medical Information Request</button>
                 </form>
             </div>
         </div>
@@ -1026,7 +1030,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Information</h3>
-                    <p>Email: info@healthvaccinations.com</p>
+                    <p>Email: abdessamadtalha@outlook.com</p>
                     <p>Business Hours: Mon-Fri 9AM-6PM EST</p>
                     <p>Global Coverage: 200+ Countries</p>
                 </div>
@@ -1038,11 +1042,11 @@
     </footer>
 
     <script>
-        // Enhanced form submission with lead qualification
+        // Enhanced form submission with lead qualification - direct email
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+            // Let the form submit naturally to email client
             
-            // Get form data
+            // Get form data for tracking
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData);
             
@@ -1080,59 +1084,25 @@
                 });
             }
             
-            // Create lead summary
-            const leadSummary = `
-MEDICAL/HEALTH LEAD CAPTURED - ${leadType}
-==========================================
-Name: ${data.name}
-Email: ${data.email}
-Phone: ${data.phone || 'Not provided'}
-Profession: ${data.profession || 'Not specified'}
-Organization: ${data.organization || 'Not provided'}
-Location: ${data.location || 'Not specified'}
-Inquiry Type: ${data['inquiry-type']}
-Lead Score: ${leadValue}/100
-Estimated Value: ${leadType}
-
-Specific Request:
-${data.message}
-
-Newsletter: ${data.newsletter ? 'Yes' : 'No'}
-Disclaimer Acknowledged: ${data.disclaimer ? 'Yes' : 'No'}
-==========================================
-            `;
-            
-            console.log(leadSummary);
-            
             // Show response based on lead quality
-            let responseMessage = "Thank you for your inquiry! ";
-            if (leadValue >= 80) {
-                responseMessage += "A senior medical information specialist will respond to your request within 4 hours.";
-            } else if (leadValue >= 50) {
-                responseMessage += "Our medical information team will respond within 24 hours with the requested information.";
-            } else {
-                responseMessage += "We'll send you the relevant vaccination information within 48 hours.";
-            }
-            
-            alert(responseMessage);
-            e.target.reset();
+            setTimeout(function() {
+                let responseMessage = "Thank you for your medical inquiry! Your email client will open to send your request. ";
+                if (leadValue >= 80) {
+                    responseMessage += "If it doesn't open automatically, please email us directly at abdessamadtalha@outlook.com - we'll prioritize your request.";
+                } else {
+                    responseMessage += "If it doesn't open automatically, please email us at abdessamadtalha@outlook.com";
+                }
+                alert(responseMessage);
+            }, 1000);
         });
 
-        // Newsletter form submission
+        // Newsletter form submission - direct email
         document.getElementById('newsletterForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+            // Let the form submit naturally to email client
             
-            const email = e.target.querySelector('input[type="email"]').value;
-            
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'newsletter_signup', {
-                    'event_category': 'engagement',
-                    'event_label': 'health_newsletter'
-                });
-            }
-            
-            alert('Thank you for subscribing! You\'ll receive the latest health and vaccination updates.');
-            e.target.reset();
+            setTimeout(function() {
+                alert('Thank you for subscribing! Your email client will open to send your subscription request.');
+            }, 1000);
         });
 
         // Smooth scrolling for navigation links
