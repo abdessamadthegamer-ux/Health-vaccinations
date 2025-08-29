@@ -106,12 +106,20 @@
             margin: 2.5rem 0;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
         }
+        .back-home {
+            display: inline-block;
+            margin: 1rem 0 0;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
     <section class="article-content">
         <div class="container">
             <div class="article-header">
+                <a class="back-home" href="/index.html#home">← Back to Home</a>
                 <h1 class="article-title">Magnesium: The Unsung Hero of Minerals and Your Body's Master Regulator</h1>
                 <div class="article-meta">
                     <span class="meta-item"><i class="far fa-clock"></i> 8 min read</span>
@@ -119,7 +127,7 @@
                 </div>
             </div>
             <div class="article-body">
-                <img src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Magnesium Rich Foods and Supplements" class="article-image">
+                <img src="https://loremflickr.com/1470/980/magnesium,supplement,minerals" alt="Magnesium Rich Foods and Supplements" class="article-image">
                 
                 <p>In the grand orchestra of nutrients that our bodies need to function, some players get all the attention. We laud the bone-building power of Calcium, the immune-boosting prowess of Vitamin C, and the energy-giving role of Iron. But quietly working behind the scenes, involved in more biochemical reactions than almost any other mineral, is the true unsung hero: Magnesium. It is the master regulator, the great relaxer, the spark of life that facilitates hundreds of essential processes that keep you healthy, energized, and resilient.</p>
                 
@@ -226,5 +234,23 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('error', function(e) {
+                const t = e.target;
+                if (t && t.tagName === 'IMG' && !t.dataset.fallbackApplied) {
+                    t.dataset.fallbackApplied = '1';
+                    t.src = 'https://loremflickr.com/1200/800/magnesium,supplement,minerals';
+                }
+            }, true);
+            try {
+                history.replaceState({ article: true }, '', window.location.href);
+                history.pushState({ article: true }, '', window.location.href);
+                window.addEventListener('popstate', function() {
+                    window.location.href = '/index.html#home';
+                });
+            } catch (e) {}
+        });
+    </script>
 </body>
 </html>
