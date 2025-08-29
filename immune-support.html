@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Art and Science of the Supplement Stack | VitalWellness</title>
     <meta name="description" content="Learn how to combine supplements for synergistic effects and create personalized stacks for your specific health goals.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --color-primary: #2a6b57;
@@ -42,7 +48,56 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }        
+        /* Header Styles */
+        header {
+            background: var(--color-white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+        
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .main-nav a:hover {
+            color: var(--color-primary);
+        }
+
         
         .article-content {
             background: var(--color-white);
@@ -109,7 +164,25 @@
     </style>
 </head>
 <body>
-    <section class="article-content">
+        <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">VitalWellness</span>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#articles">Articles</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<section class="article-content">
         <div class="container">
             <div class="article-header">
                 <h1 class="article-title">The Art and Science of the Supplement Stack: A Beginner's Guide</h1>
@@ -119,7 +192,7 @@
                 </div>
             </div>
             <div class="article-body">
-                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Supplement Stack Organization" class="article-image">
+                <img src="https://cdn.pixabay.com/photo/2016/12/06/18/28/medicine-1887710_1280.jpg" alt="Supplement Stack Organization" class="article-image">
                 
                 <p>In the world of health and wellness, the journey often begins with a single supplement. Perhaps it was a multivitamin to cover nutritional bases, Vitamin D to get through a long winter, or protein powder to support a new fitness routine. But as you delve deeper into optimizing your health, performance, or cognitive function, you may encounter a more advanced concept: the "supplement stack." This term, once confined to the circles of elite athletes and biohackers, has entered the mainstream lexicon, representing a more intentional and synergistic approach to supplementation.</p>
                 
