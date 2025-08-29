@@ -106,12 +106,20 @@
             margin: 2.5rem 0;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
         }
+        .back-home {
+            display: inline-block;
+            margin: 1rem 0 0;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
     <section class="article-content">
         <div class="container">
             <div class="article-header">
+                <a class="back-home" href="/index.html#home">← Back to Home</a>
                 <h1 class="article-title">Ashwagandha and Adaptogens: Nature's Answer to Modern Stress</h1>
                 <div class="article-meta">
                     <span class="meta-item"><i class="far fa-clock"></i> 10 min read</span>
@@ -119,7 +127,7 @@
                 </div>
             </div>
             <div class="article-body">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Ashwagandha and Adaptogens" class="article-image">
+                <img src="https://loremflickr.com/1470/980/ashwagandha,herbs,adaptogen" alt="Ashwagandha and Adaptogens" class="article-image">
                 
                 <p>In the 21st century, stress has become an almost constant companion. The relentless pace of work, the ceaseless flow of information, and the pressures of personal and professional responsibilities create a state of chronic "fight-or-flight" for many. Our bodies' stress response system, designed to handle short-term, acute threats, is now activated around the clock. This sustained state of high alert, driven by the hormone cortisol, can be profoundly damaging to our physical and mental health, leading to burnout, anxiety, fatigue, weakened immunity, and a host of other chronic issues.</p>
                 
@@ -196,5 +204,26 @@
             </div>
         </div>
     </section>
+    <script>
+        // Replace broken images with a stable placeholder and ensure back goes to home
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('error', function(e) {
+                const t = e.target;
+                if (t && t.tagName === 'IMG' && !t.dataset.fallbackApplied) {
+                    t.dataset.fallbackApplied = '1';
+                    t.src = 'https://loremflickr.com/1200/800/ashwagandha,herbs,adaptogen';
+                }
+            }, true);
+
+            // Make browser back go to home
+            try {
+                history.replaceState({ article: true }, '', window.location.href);
+                history.pushState({ article: true }, '', window.location.href);
+                window.addEventListener('popstate', function() {
+                    window.location.href = '/index.html#home';
+                });
+            } catch (e) {}
+        });
+    </script>
 </body>
 </html>

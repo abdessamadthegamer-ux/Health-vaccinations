@@ -167,7 +167,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(105deg, rgba(42, 107, 87, 0.9) 0%, rgba(58, 140, 115, 0.85) 100%), url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background: linear-gradient(105deg, rgba(42, 107, 87, 0.9) 0%, rgba(58, 140, 115, 0.85) 100%), url('https://loremflickr.com/1740/800/health,wellness');
             background-size: cover;
             background-position: center;
             color: white;
@@ -929,7 +929,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo" onclick="showPage('home')">
+                <a href="#home" class="logo">
                     <i class="fas fa-leaf logo-icon"></i>
                     <div>
                         <div class="logo-text">VitalWellness</div>
@@ -938,11 +938,11 @@
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="#" onclick="showPage('home')">Home</a></li>
-                        <li><a href="#" onclick="showPage('articles')">Articles</a></li>
-                        <li><a href="#" onclick="showPage('products')">Products</a></li>
-                        <li><a href="#" onclick="showPage('about')">About</a></li>
-                        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#" class="nav-cta" onclick="handleNewsletter(event)">Subscribe</a></li>
                     </ul>
                 </nav>
@@ -961,7 +961,7 @@
                     </div>
                     <h1>Transform Your Health With Trusted Guidance</h1>
                     <p>Evidence-based health strategies and honest reviews of premium supplements to optimize your wellness journey.</p>
-                    <a href="#" class="cta-button" onclick="showPage('articles')">
+                    <a href="#articles" class="cta-button">
                         Explore Our Guides
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -1011,7 +1011,7 @@
                 <div class="articles-grid">
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Immune System Boosters">
+                            <img src="https://loremflickr.com/1470/980/ashwagandha,herbs,adaptogen" alt="Immune System Boosters">
                         </div>
                         <div class="article-content">
                             <h3>Ashwagandha and Adaptogens: Nature's Answer to Modern Stress</h3>
@@ -1021,7 +1021,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>10 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('ashwagandha-adaptogens')">
+                                <a href="#article/ashwagandha-adaptogens" class="read-more">
                                     Read Guide
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1030,7 +1030,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1543866627-9c06c23ec5f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Vitamin D Guide">
+                            <img src="https://loremflickr.com/1200/800/cbd,oil,hemp" alt="Vitamin D Guide">
                         </div>
                         <div class="article-content">
                             <h3>CBD Oil Explained: A Comprehensive and Objective Guide for Beginners</h3>
@@ -1040,7 +1040,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>12 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('cbd-oil')">
+                                <a href="#article/cbd-oil" class="read-more">
                                     Read Guide
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1049,7 +1049,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Natural Energy Boosters">
+                            <img src="https://loremflickr.com/1472/980/magnesium,supplement,minerals" alt="Natural Energy Boosters">
                         </div>
                         <div class="article-content">
                             <h3>Magnesium: The Unsung Hero of Minerals and Your Body's Master Regulator</h3>
@@ -1059,7 +1059,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>8 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('magnesium')">
+                                <a href="#article/magnesium" class="read-more">
                                     Read Guide
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1077,7 +1077,7 @@
                 <div class="products-slider">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1642790337847-8b16421bbfc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Premium Vitamin D3 Supplement">
+                            <img src="https://loremflickr.com/1632/800/vitamin,d,capsules" alt="Premium Vitamin D3 Supplement">
                             <div class="product-badge">Editor's Choice</div>
                         </div>
                         <div class="product-content">
@@ -1099,7 +1099,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1584308666741-ee6695f137c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Hemp Oil Drops">
+                            <img src="https://loremflickr.com/1632/800/cbd,oil,hemp" alt="Hemp Oil Drops">
                             <div class="product-badge">Best Seller</div>
                         </div>
                         <div class="product-content">
@@ -1121,7 +1121,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1595066310249-00fd6ab4841c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Magnesium L-Threonate">
+                            <img src="https://loremflickr.com/1632/800/magnesium,supplement,minerals" alt="Magnesium L-Threonate">
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Life Extension Neuro-Mag Magnesium L-Threonate</h3>
@@ -1142,7 +1142,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1593085260707-5377ba37f868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Omega-3 Supplement">
+                            <img src="https://loremflickr.com/1469/800/omega,fish,oil" alt="Omega-3 Supplement">
                             <div class="product-badge">New</div>
                         </div>
                         <div class="product-content">
@@ -1164,7 +1164,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1591580774313-6b1f98a43b6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Recovery Cooling Balm">
+                            <img src="https://loremflickr.com/1074/800/recovery,balm,fitness" alt="Recovery Cooling Balm">
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Muscle MX Recovery Cooling Balm</h3>
@@ -1185,7 +1185,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1591081658710-4c85dcc1e6ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Heating Balm">
+                            <img src="https://loremflickr.com/1074/800/heating,balm,fitness" alt="Heating Balm">
                         </div>
                         <div class="product-content">
                             <h3 class="product-title">Muscle MX Activate Heating Balm</h3>
@@ -1232,7 +1232,7 @@
                 <div class="articles-grid">
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Immune System Boosters">
+                            <img src="https://loremflickr.com/1470/980/ashwagandha,herbs,adaptogen" alt="Immune System Boosters">
                         </div>
                         <div class="article-content">
                             <h3>Ashwagandha and Adaptogens: Nature's Answer to Modern Stress</h3>
@@ -1242,7 +1242,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>10 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('ashwagandha-adaptogens')">
+                                <a href="#article/ashwagandha-adaptogens" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1251,7 +1251,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1543866627-9c06c23ec5f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Vitamin D Guide">
+                            <img src="https://loremflickr.com/1200/800/cbd,oil,hemp" alt="Vitamin D Guide">
                         </div>
                         <div class="article-content">
                             <h3>CBD Oil Explained: A Comprehensive and Objective Guide for Beginners</h3>
@@ -1261,7 +1261,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>12 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('cbd-oil')">
+                                <a href="#article/cbd-oil" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1270,7 +1270,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Natural Energy Boosters">
+                            <img src="https://loremflickr.com/1472/980/magnesium,supplement,minerals" alt="Natural Energy Boosters">
                         </div>
                         <div class="article-content">
                             <h3>Magnesium: The Unsung Hero of Minerals and Your Body's Master Regulator</h3>
@@ -1280,7 +1280,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>8 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('magnesium')">
+                                <a href="#article/magnesium" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1289,7 +1289,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Vitamin D Guide">
+                            <img src="https://loremflickr.com/1470/980/vitamin,d,capsules" alt="Vitamin D Guide">
                         </div>
                         <div class="article-content">
                             <h3>The Ultimate Vitamin D Guide: Unlocking the Power of the Sunshine Vitamin</h3>
@@ -1299,7 +1299,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>15 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('vitamin-d-guide')">
+                                <a href="#article/vitamin-d-guide" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1308,7 +1308,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Immune Support">
+                            <img src="https://loremflickr.com/1470/980/immune,health,vitamins" alt="Immune Support">
                         </div>
                         <div class="article-content">
                             <h3>The Ultimate Guide to Bolstering Your Immune Support System</h3>
@@ -1318,7 +1318,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>18 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('immune-support')">
+                                <a href="#article/immune-support" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1327,7 +1327,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1535914254987-b7e5e7e7c0d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Zinc vs Vitamin C">
+                            <img src="https://loremflickr.com/1470/980/zinc,vitamin,capsules" alt="Zinc vs Vitamin C">
                         </div>
                         <div class="article-content">
                             <h3>The Immunity Showdown: Zinc vs. Vitamin C - Which is a Better Ally?</h3>
@@ -1337,7 +1337,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>10 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('zinc-vs-vitamin-c')">
+                                <a href="#article/zinc-vs-vitamin-c" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1346,7 +1346,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Supplement Stack">
+                            <img src="https://loremflickr.com/1470/980/supplement,stack,vitamins" alt="Supplement Stack">
                         </div>
                         <div class="article-content">
                             <h3>The Art and Science of the Supplement Stack: A Beginner's Guide</h3>
@@ -1356,7 +1356,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>14 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('supplement-stack')">
+                                <a href="#article/supplement-stack" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1365,7 +1365,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" alt="Gut-Immune Connection">
+                            <img src="https://loremflickr.com/1474/980/gut,probiotic,immune" alt="Gut-Immune Connection">
                         </div>
                         <div class="article-content">
                             <h3>The Gut-Immune Connection: A Comprehensive Guide to Probiotics and Gut Health</h3>
@@ -1375,7 +1375,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>16 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('gut-immune-connection')">
+                                <a href="#article/gut-immune-connection" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -1384,7 +1384,7 @@
                     </div>
                     <div class="article-card">
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Natural Energy">
+                            <img src="https://loremflickr.com/1470/980/energy,natural,fitness" alt="Natural Energy">
                         </div>
                         <div class="article-content">
                             <h3>Unlocking Your Potential: A Comprehensive Guide to Sustainable Natural Energy</h3>
@@ -1394,7 +1394,7 @@
                                     <i class="far fa-clock"></i>
                                     <span>12 min read</span>
                                 </div>
-                                <a href="#" class="read-more" onclick="showArticle('natural-energy')">
+                                <a href="#article/natural-energy" class="read-more">
                                     Read More
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
@@ -2469,23 +2469,33 @@
     </footer>
 
     <script>
-        // Simple navigation system
+        // Simple hash-based router for proper back/forward behavior
         function showPage(pageId) {
-            // Hide all pages
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.add('hidden'));
-            
-            // Show selected page
             const targetPage = document.getElementById(pageId);
             if (targetPage) {
                 targetPage.classList.remove('hidden');
                 window.scrollTo(0, 0);
             }
         }
-        
-        function showArticle(articleId) {
-            showPage(articleId);
+
+        function navigateByHash() {
+            const rawHash = window.location.hash || '#home';
+            // Support patterns: #home, #articles, #products, #about, #contact, #article/<id>
+            if (rawHash.startsWith('#article/')) {
+                const articleId = rawHash.replace('#article/', '').trim();
+                showPage(articleId || 'home');
+                trackPageView(`article:${articleId}`);
+                return;
+            }
+            const pageId = rawHash.replace('#', '') || 'home';
+            showPage(pageId);
+            trackPageView(pageId);
         }
+
+        window.addEventListener('hashchange', navigateByHash);
+        document.addEventListener('DOMContentLoaded', navigateByHash);
         
         function handleNewsletter(event) {
             event.preventDefault();
@@ -2508,13 +2518,19 @@
             console.log('Page view:', page);
         }
         
-        // Track initial page load
-        trackPageView('home');
+        // Track initial page load (handled in navigateByHash as well)
         
         // Add smooth scrolling for better UX
         document.addEventListener('DOMContentLoaded', function() {
-            // Any initialization code
             console.log('VitalWellness website loaded successfully');
+            // Image fallback handler: swap to placeholder if an image fails
+            document.body.addEventListener('error', function(e) {
+                const target = e.target;
+                if (target && target.tagName === 'IMG' && !target.dataset.fallbackApplied) {
+                    target.dataset.fallbackApplied = '1';
+                    target.src = 'https://loremflickr.com/1200/800/health,wellness';
+                }
+            }, true);
         });
     </script>
 </body>

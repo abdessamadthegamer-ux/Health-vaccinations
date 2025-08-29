@@ -106,12 +106,20 @@
             margin: 2.5rem 0;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
         }
+        .back-home {
+            display: inline-block;
+            margin: 1rem 0 0;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
     <section class="article-content">
         <div class="container">
             <div class="article-header">
+                <a class="back-home" href="/index.html#home">← Back to Home</a>
                 <h1 class="article-title">Unlocking Your Potential: A Comprehensive Guide to Sustainable Natural Energy</h1>
                 <div class="article-meta">
                     <span class="meta-item"><i class="far fa-clock"></i> 12 min read</span>
@@ -119,7 +127,7 @@
                 </div>
             </div>
             <div class="article-body">
-                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Natural Energy Sources" class="article-image">
+                <img src="https://loremflickr.com/1470/980/energy,natural,fitness" alt="Natural Energy Sources" class="article-image">
                 
                 <p>In our fast-paced, high-demand world, energy is the ultimate currency. We need it to excel at our jobs, to be present for our families, to pursue our passions, and to simply navigate the complexities of modern life. Yet, for millions of people, feeling truly energized is a daily struggle. We find ourselves reaching for another cup of coffee, a sugary snack, or an energy drink, seeking a temporary jolt to push through the afternoon slump. These quick fixes, however, often lead to a cycle of energy spikes and crashes, leaving us more depleted in the long run.</p>
                 
@@ -254,5 +262,23 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('error', function(e) {
+                const t = e.target;
+                if (t && t.tagName === 'IMG' && !t.dataset.fallbackApplied) {
+                    t.dataset.fallbackApplied = '1';
+                    t.src = 'https://loremflickr.com/1200/800/energy,natural,fitness';
+                }
+            }, true);
+            try {
+                history.replaceState({ article: true }, '', window.location.href);
+                history.pushState({ article: true }, '', window.location.href);
+                window.addEventListener('popstate', function() {
+                    window.location.href = '/index.html#home';
+                });
+            } catch (e) {}
+        });
+    </script>
 </body>
 </html>

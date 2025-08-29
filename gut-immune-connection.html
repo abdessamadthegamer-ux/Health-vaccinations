@@ -106,12 +106,20 @@
             margin: 2.5rem 0;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
         }
+        .back-home {
+            display: inline-block;
+            margin: 1rem 0 0;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
     <section class="article-content">
         <div class="container">
             <div class="article-header">
+                <a class="back-home" href="/index.html#home">← Back to Home</a>
                 <h1 class="article-title">The Gut-Immune Connection: A Comprehensive Guide to Probiotics and Gut Health</h1>
                 <div class="article-meta">
                     <span class="meta-item"><i class="far fa-clock"></i> 16 min read</span>
@@ -119,7 +127,7 @@
                 </div>
             </div>
             <div class="article-body">
-                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" alt="Gut Health and Probiotics" class="article-image">
+                <img src="https://loremflickr.com/1470/980/gut,probiotic,immune" alt="Gut Health and Probiotics" class="article-image">
                 
                 <p>For centuries, the gut was viewed simply as a digestive tube—a passive system for processing food and eliminating waste. However, a scientific revolution over the past two decades has shattered this simplistic view, revealing the gastrointestinal tract to be a bustling, intelligent, and profoundly influential ecosystem. At the heart of this revolution is the gut microbiome: a complex community of trillions of bacteria, viruses, fungi, and other microorganisms that reside in your intestines. This microbial world is not just a passenger; it is an active and essential partner in your health, influencing everything from your mood and metabolism to, most critically, your immune system.</p>
                 
@@ -246,5 +254,23 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('error', function(e) {
+                const t = e.target;
+                if (t && t.tagName === 'IMG' && !t.dataset.fallbackApplied) {
+                    t.dataset.fallbackApplied = '1';
+                    t.src = 'https://loremflickr.com/1200/800/gut,probiotic,immune';
+                }
+            }, true);
+            try {
+                history.replaceState({ article: true }, '', window.location.href);
+                history.pushState({ article: true }, '', window.location.href);
+                window.addEventListener('popstate', function() {
+                    window.location.href = '/index.html#home';
+                });
+            } catch (e) {}
+        });
+    </script>
 </body>
 </html>
