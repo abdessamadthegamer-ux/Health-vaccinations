@@ -6,33 +6,6 @@
     <title>HealthVaccinations - Premium Health & Wellness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        // Preload images to prevent missing images
-        const preloadImages = [
-            'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-            'https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-        ];
-        
-        // Preload function
-        function preloadImagesFunc(urls) {
-            urls.forEach(url => {
-                const img = new Image();
-                img.src = url;
-            });
-        }
-        
-        // Call preload function
-        window.onload = function() {
-            preloadImagesFunc(preloadImages);
-        };
-    </script>
     <style>
         :root {
             --primary: #2a7de1;
@@ -59,7 +32,8 @@
             color: var(--dark);
             background-color: #f9fafb;
             overflow-x: hidden;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f9fa"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%23e9ecef" stroke-width="0.5"/></svg>');
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f9fa"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%23e9ecef" stroke-width="0.5"/></svg>');
         }
         
         h1, h2, h3, h4, h5 {
@@ -201,7 +175,7 @@
         /* Hero Section */
         .hero {
             padding: 150px 0 80px;
-            background: linear-gradient(135deg, rgba(42, 125, 225, 0.1) 0%, rgba(56, 182, 160, 0.1) 100%);
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             text-align: center;
         }
         
@@ -579,31 +553,31 @@
                     <div class="articles-grid">
                         <!-- Article 1 -->
                         <div class="article-card fade-in">
-                            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Vitamin D Benefits" class="article-img">
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ashwagandha" class="article-img">
                             <div class="article-content">
-                                <h3>The Essential Guide to Vitamin D Benefits</h3>
-                                <p>Vitamin D plays a crucial role in maintaining overall health. Learn how it supports your immune system, bone health, and mood regulation.</p>
-                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <h3>Ashwagandha & Adaptogens</h3>
+                                <p>Discover how adaptogenic herbs like ashwagandha can help your body manage stress and promote balance.</p>
+                                <a href="ashwagandha-adaptogens.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         
                         <!-- Article 2 -->
                         <div class="article-card fade-in">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Magnesium Benefits" class="article-img">
+                            <img src="https://images.unsplash.com/photo-1514593214833-49f0c4b0d248?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="CBD Oil" class="article-img">
                             <div class="article-content">
-                                <h3>Why Magnesium is Crucial for Your Health</h3>
-                                <p>Magnesium is involved in hundreds of biochemical reactions in your body. Discover how this mineral supports your health and well-being.</p>
-                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <h3>CBD Oil: Benefits and Uses</h3>
+                                <p>Explore the potential health benefits of CBD oil and how to choose a high-quality product.</p>
+                                <a href="cbd-oil.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         
                         <!-- Article 3 -->
                         <div class="article-card fade-in">
-                            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Omega-3 Benefits" class="article-img">
+                            <img src="https://images.unsplash.com/photo-1593759607110-9a2a5a4af6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Gut Health" class="article-img">
                             <div class="article-content">
-                                <h3>Omega-3 Fatty Acids: The Complete Guide</h3>
-                                <p>Omega-3s are essential fats that provide numerous health benefits. Learn about the different types and their impact on heart and brain health.</p>
-                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <h3>Gut-Immune Connection</h3>
+                                <p>Discover the vital connection between your gut health and immune system function.</p>
+                                <a href="gut-immune-connection.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -621,7 +595,7 @@
                             <a href="#about" class="btn" data-page="about">Learn More About Us</a>
                         </div>
                         <div class="about-image">
-                            <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Team">
                         </div>
                     </div>
                 </div>
@@ -647,93 +621,93 @@
                 <p>Browse our complete collection of evidence-based health articles and product reviews.</p>
                 
                 <div class="articles-grid">
-                    <!-- Article 1 -->
+                    <!-- Article 1 - Ashwagandha -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Vitamin D Benefits" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ashwagandha" class="article-img">
                         <div class="article-content">
-                            <h3>The Essential Guide to Vitamin D Benefits</h3>
-                            <p>Vitamin D plays a crucial role in maintaining overall health. Learn how it supports your immune system, bone health, and mood regulation.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Ashwagandha & Adaptogens</h3>
+                            <p>Discover how adaptogenic herbs like ashwagandha can help your body manage stress and promote balance.</p>
+                            <a href="ashwagandha-adaptogens.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 2 -->
+                    <!-- Article 2 - CBD Oil -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Magnesium Benefits" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1514593214833-49f0c4b0d248?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="CBD Oil" class="article-img">
                         <div class="article-content">
-                            <h3>Why Magnesium is Crucial for Your Health</h3>
-                            <p>Magnesium is involved in hundreds of biochemical reactions in your body. Discover how this mineral supports your health and well-being.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>CBD Oil: Benefits and Uses</h3>
+                            <p>Explore the potential health benefits of CBD oil and how to choose a high-quality product.</p>
+                            <a href="cbd-oil.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 3 -->
+                    <!-- Article 3 - Gut Health -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Omega-3 Benefits" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1593759607110-9a2a5a4af6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Gut Health" class="article-img">
                         <div class="article-content">
-                            <h3>Omega-3 Fatty Acids: The Complete Guide</h3>
-                            <p>Omega-3s are essential fats that provide numerous health benefits. Learn about the different types and their impact on heart and brain health.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Gut-Immune Connection</h3>
+                            <p>Discover the vital connection between your gut health and immune system function.</p>
+                            <a href="gut-immune-connection.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 4 -->
+                    <!-- Article 4 - Immune Support -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hemp Oil Benefits" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1571019614247-c64ccb7136c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Immune Support" class="article-img">
                         <div class="article-content">
-                            <h3>Hemp Oil: Benefits and Uses</h3>
-                            <p>Discover the potential health benefits of hemp oil, from reducing inflammation to improving skin health.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Natural Immune Support</h3>
+                            <p>Learn about evidence-based strategies to support your immune system naturally.</p>
+                            <a href="immune-support.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 5 -->
+                    <!-- Article 5 - Magnesium -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Exercise Recovery" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1593085260707-5377ba37f868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Magnesium" class="article-img">
                         <div class="article-content">
-                            <h3>Top Recovery Techniques After Exercise</h3>
-                            <p>Learn about the most effective recovery methods to help your body heal and become stronger after workouts.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Magnesium: The Essential Mineral</h3>
+                            <p>Discover why magnesium is crucial for hundreds of biochemical reactions in your body.</p>
+                            <a href="magnesium.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 6 -->
+                    <!-- Article 6 - Natural Energy -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immune Boosting" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Natural Energy" class="article-img">
                         <div class="article-content">
-                            <h3>10 Science-Backed Ways to Boost Your Immune System</h3>
-                            <p>Discover effective strategies to strengthen your immune system naturally through diet, lifestyle, and supplements.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Natural Energy Boosters</h3>
+                            <p>Discover natural ways to boost your energy levels without relying on stimulants.</p>
+                            <a href="natural-energy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 7 -->
+                    <!-- Article 7 - Supplement Stack -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sleep Benefits" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Supplement Stack" class="article-img">
                         <div class="article-content">
-                            <h3>The Importance of Quality Sleep for Health</h3>
-                            <p>Learn why sleep is essential for physical and mental health and discover tips for improving your sleep quality.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Building Your Supplement Stack</h3>
+                            <p>Learn how to create an effective supplement regimen tailored to your specific health needs.</p>
+                            <a href="supplement-stack.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 8 -->
+                    <!-- Article 8 - Vitamin D -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Healthy Diet" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Vitamin D" class="article-img">
                         <div class="article-content">
-                            <h3>Building a Balanced Diet: A Complete Guide</h3>
-                            <p>Understand the components of a healthy diet and how to create balanced meals that support your health goals.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Vitamin D Guide</h3>
+                            <p>Learn about the importance of Vitamin D for immune function, bone health, and overall wellness.</p>
+                            <a href="vitamin-d-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Article 9 -->
+                    <!-- Article 9 - Zinc vs Vitamin C -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Stress Management" class="article-img">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Zinc vs Vitamin C" class="article-img">
                         <div class="article-content">
-                            <h3>Effective Stress Management Techniques</h3>
-                            <p>Discover proven methods to manage stress and improve your mental well-being in today's fast-paced world.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <h3>Zinc vs Vitamin C: Which is Better?</h3>
+                            <p>Compare the immune-supporting benefits of zinc and vitamin C and learn how to use them effectively.</p>
+                            <a href="zinc-vs-vitamin-c.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -765,7 +739,7 @@
                         </ul>
                     </div>
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Team">
                     </div>
                 </div>
             </div>
