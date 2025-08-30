@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthVaccinations - Premium Health & Wellness</title>
+    <title>VitaWellness - Premium Health & Wellness Guidance</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2a7de1;
-            --secondary: #38b6a0;
-            --accent: #ff6b6b;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --gray: #6c757d;
-            --light-gray: #e9ecef;
+            --warm-beige: #F8F4EF;
+            --soft-clay: #D7B9A3;
+            --sage-green: #9CAF96;
+            --dusty-rose: #D4A5A5;
+            --deep-forest: #3A4A3F;
+            --warm-gray: #7D7D7D;
+            --light-accent: #F0E6E0;
             --transition: all 0.3s ease;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            --radius: 8px;
+            --shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
         }
         
         * {
@@ -27,47 +27,48 @@
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: #f9fafb;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-forest);
+            background-color: var(--warm-beige);
             overflow-x: hidden;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f9fa"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%23e9ecef" stroke-width="0.5"/></svg>');
         }
         
         h1, h2, h3, h4, h5 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--dark);
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: var(--deep-forest);
         }
         
         h1 {
-            font-size: 2.8rem;
+            font-size: 3rem;
+            line-height: 1.2;
         }
         
         h2 {
-            font-size: 2.2rem;
-            color: var(--primary);
+            font-size: 2.4rem;
+            color: var(--sage-green);
         }
         
         h3 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
         }
         
         p {
             margin-bottom: 1.5rem;
+            font-weight: 400;
+            color: var(--deep-forest);
         }
         
         a {
-            color: var(--primary);
+            color: var(--sage-green);
             text-decoration: none;
             transition: var(--transition);
         }
         
         a:hover {
-            color: var(--secondary);
+            color: var(--soft-clay);
         }
         
         .container {
@@ -79,8 +80,8 @@
         
         .btn {
             display: inline-block;
-            padding: 12px 28px;
-            background: var(--primary);
+            padding: 14px 32px;
+            background: var(--sage-green);
             color: white;
             border-radius: var(--radius);
             font-weight: 500;
@@ -88,38 +89,41 @@
             border: none;
             cursor: pointer;
             text-align: center;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
         }
         
         .btn:hover {
-            background: var(--secondary);
+            background: var(--deep-forest);
             color: white;
             transform: translateY(-3px);
             box-shadow: var(--shadow);
         }
         
         .btn-secondary {
-            background: var(--secondary);
+            background: var(--soft-clay);
         }
         
         .btn-secondary:hover {
-            background: var(--primary);
+            background: var(--dusty-rose);
         }
         
         /* Header & Navigation */
         header {
-            background: white;
-            box-shadow: var(--shadow);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(218, 206, 197, 0.3);
         }
         
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
         }
         
         .logo {
@@ -130,11 +134,12 @@
         .logo h1 {
             font-size: 1.8rem;
             margin: 0;
-            color: var(--primary);
+            color: var(--deep-forest);
+            font-weight: 700;
         }
         
         .logo span {
-            color: var(--secondary);
+            color: var(--sage-green);
         }
         
         .nav-menu {
@@ -143,13 +148,14 @@
         }
         
         .nav-menu li {
-            margin-left: 25px;
+            margin-left: 30px;
         }
         
         .nav-menu a {
-            color: var(--dark);
+            color: var(--deep-forest);
             font-weight: 500;
             position: relative;
+            font-size: 1.05rem;
         }
         
         .nav-menu a:after {
@@ -159,7 +165,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--secondary);
+            background: var(--sage-green);
             transition: var(--transition);
         }
         
@@ -170,47 +176,71 @@
         .hamburger {
             display: none;
             cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--deep-forest);
         }
         
         /* Hero Section */
         .hero {
-            padding: 150px 0 80px;
-            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+            padding: 160px 0 100px;
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(248, 244, 239, 0.6);
+            z-index: 0;
         }
         
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
         
         .hero h1 {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             animation: fadeIn 1s ease;
         }
         
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: var(--gray);
+            font-size: 1.25rem;
+            margin-bottom: 35px;
+            color: var(--deep-forest);
             animation: fadeIn 1.5s ease;
         }
         
         /* Featured Articles */
         .featured-articles {
-            padding: 80px 0;
+            padding: 100px 0;
             background: white;
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .section-title p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--warm-gray);
         }
         
         .articles-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 35px;
         }
         
         .article-card {
@@ -219,68 +249,213 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: var(--transition);
+            border: 1px solid var(--light-accent);
+            position: relative;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
         }
         
         .article-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
         }
         
-        .article-img {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
+        .article-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--sage-green);
+            transition: var(--transition);
+        }
+        
+        .article-card:hover .article-icon {
+            transform: scale(1.2) rotate(5deg);
+            color: var(--soft-clay);
         }
         
         .article-content {
-            padding: 20px;
+            padding: 0;
         }
         
         .article-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        
+        .article-content p {
+            color: var(--warm-gray);
+            margin-bottom: 20px;
         }
         
         .read-more {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             margin-top: 10px;
             font-weight: 500;
-            color: var(--primary);
+            color: var(--sage-green);
+            gap: 8px;
+        }
+        
+        .read-more:hover {
+            gap: 12px;
+        }
+        
+        /* Animation elements for articles */
+        .animated-element {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 25px;
+            position: relative;
+        }
+        
+        .pulse-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .pulse-dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--sage-green);
+            display: inline-block;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+        
+        .pulse-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+            background: var(--soft-clay);
+        }
+        
+        .pulse-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+            background: var(--dusty-rose);
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(0.8);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+        
+        .wave-line {
+            height: 4px;
+            width: 80px;
+            background: var(--sage-green);
+            border-radius: 2px;
+            margin: 0 auto 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .wave-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+            animation: wave 1.5s infinite linear;
+        }
+        
+        @keyframes wave {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .rotating-circle {
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--soft-clay);
+            border-radius: 50%;
+            border-top-color: transparent;
+            margin: 0 auto 25px;
+            animation: rotate 2s infinite linear;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
         
         /* About Preview */
         .about-preview {
-            padding: 80px 0;
-            background: var(--light);
+            padding: 100px 0;
+            background: var(--warm-beige);
         }
         
         .about-content {
             display: flex;
             align-items: center;
-            gap: 50px;
+            gap: 60px;
         }
         
         .about-text {
             flex: 1;
         }
         
-        .about-image {
-            flex: 1;
+        /* Wellness Tips Section */
+        .wellness-tips {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .tips-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .tip-card {
+            background: var(--warm-beige);
+            padding: 30px;
             border-radius: var(--radius);
-            overflow: hidden;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--light-accent);
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
             box-shadow: var(--shadow);
         }
         
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .tip-icon {
+            font-size: 2.5rem;
+            color: var(--sage-green);
+            margin-bottom: 20px;
+        }
+        
+        .tip-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
         }
         
         /* Newsletter */
         .newsletter {
-            padding: 60px 0;
-            background: var(--primary);
+            padding: 80px 0;
+            background: linear-gradient(rgba(61, 76, 65, 0.9), rgba(61, 76, 65, 0.9)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
             color: white;
             text-align: center;
         }
@@ -291,47 +466,60 @@
         
         .newsletter p {
             max-width: 600px;
-            margin: 0 auto 30px;
+            margin: 0 auto 35px;
+            color: rgba(255, 255, 255, 0.9);
         }
         
         .newsletter-form {
             display: flex;
-            max-width: 500px;
+            max-width: 520px;
             margin: 0 auto;
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
         }
         
         .newsletter-form input {
             flex: 1;
-            padding: 15px;
+            padding: 18px 20px;
             border: none;
-            border-radius: var(--radius) 0 0 var(--radius);
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .newsletter-form input:focus {
+            outline: none;
         }
         
         .newsletter-form button {
-            border-radius: 0 var(--radius) var(--radius) 0;
             border: none;
             cursor: pointer;
+            padding: 0 25px;
         }
         
         /* Footer */
         footer {
-            background: var(--dark);
+            background: var(--deep-forest);
             color: white;
-            padding: 60px 0 30px;
+            padding: 80px 0 40px;
         }
         
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            gap: 50px;
+            margin-bottom: 50px;
         }
         
         .footer-column h3 {
             color: white;
-            margin-bottom: 20px;
-            font-size: 1.4rem;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-column p {
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .footer-column ul {
@@ -339,94 +527,107 @@
         }
         
         .footer-column ul li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         
         .footer-column a {
-            color: var(--light-gray);
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
         }
         
         .footer-column a:hover {
-            color: white;
+            color: var(--soft-clay);
+            padding-left: 5px;
         }
         
         .social-links {
             display: flex;
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         
         .social-links a {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             transition: var(--transition);
         }
         
         .social-links a:hover {
-            background: var(--primary);
+            background: var(--sage-green);
             transform: translateY(-3px);
         }
         
         .copyright {
             text-align: center;
-            padding-top: 30px;
+            padding-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--light-gray);
-            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
         }
         
         /* Page Content */
         .page-content {
-            padding: 120px 0 80px;
+            padding: 140px 0 80px;
             min-height: 70vh;
         }
         
         /* Contact Form */
         .contact-form {
             background: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: var(--radius);
             box-shadow: var(--shadow);
+            margin-top: 30px;
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: 500;
+            color: var(--deep-forest);
         }
         
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--light-gray);
+            padding: 15px 18px;
+            border: 1px solid var(--light-accent);
             border-radius: var(--radius);
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--sage-green);
+            box-shadow: 0 0 0 3px rgba(156, 175, 150, 0.2);
         }
         
         .form-group textarea {
-            min-height: 150px;
+            min-height: 180px;
+            resize: vertical;
         }
         
         /* Policy Pages */
         .policy-content {
             background: white;
-            padding: 40px;
+            padding: 45px;
             border-radius: var(--radius);
             box-shadow: var(--shadow);
         }
         
         .policy-section {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
         
         /* Articles Grid */
@@ -447,7 +648,14 @@
         }
         
         .fade-in {
-            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         
         /* Responsive Design */
@@ -456,8 +664,12 @@
                 flex-direction: column;
             }
             
-            .about-image {
-                order: -1;
+            h1 {
+                font-size: 2.6rem;
+            }
+            
+            h2 {
+                font-size: 2.1rem;
             }
         }
         
@@ -472,10 +684,10 @@
                 right: -100%;
                 flex-direction: column;
                 background: white;
-                width: 250px;
+                width: 280px;
                 height: 100vh;
-                padding: 40px 20px;
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                padding: 40px 30px;
+                box-shadow: -5px 0 25px rgba(0, 0, 0, 0.08);
                 transition: var(--transition);
             }
             
@@ -484,24 +696,63 @@
             }
             
             .nav-menu li {
-                margin: 15px 0;
+                margin: 18px 0;
+            }
+            
+            .hero {
+                padding: 140px 0 80px;
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.3rem;
             }
             
             .newsletter-form {
                 flex-direction: column;
+                background: transparent;
+                box-shadow: none;
             }
             
             .newsletter-form input {
                 border-radius: var(--radius);
-                margin-bottom: 10px;
+                margin-bottom: 15px;
+                padding: 16px 20px;
             }
             
             .newsletter-form button {
                 border-radius: var(--radius);
+                padding: 16px 20px;
+            }
+            
+            .footer-content {
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.9rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form,
+            .policy-content {
+                padding: 25px;
             }
         }
     </style>
@@ -511,7 +762,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <h1>Health<span>Vaccinations</span></h1>
+                <h1>Vita<span>Wellness</span></h1>
             </div>
             
             <nav>
@@ -522,9 +773,9 @@
                     <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
                 </ul>
                 
-                <div class="hamburger">
+                <button class="hamburger">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
@@ -536,9 +787,9 @@
             <!-- Hero Section -->
             <section class="hero">
                 <div class="container hero-content">
-                    <h1>Your Journey to Better Health Starts Here</h1>
-                    <p>We provide evidence-based health information, product reviews, and wellness tips to help you live your healthiest life.</p>
-                    <a href="#articles" class="btn" data-page="articles">Explore Articles</a>
+                    <h1>Nourish Your Body, Nurture Your Wellbeing</h1>
+                    <p>Discover evidence-based guidance on vitamins, supplements, and holistic wellness practices to support your health journey.</p>
+                    <a href="#articles" class="btn" data-page="articles">Explore Wellness Insights</a>
                 </div>
             </section>
 
@@ -546,39 +797,85 @@
             <section class="featured-articles">
                 <div class="container">
                     <div class="section-title">
-                        <h2>Featured Health Articles</h2>
-                        <p>Discover our latest research and recommendations</p>
+                        <h2>Featured Wellness Guidance</h2>
+                        <p>Trusted insights to support your health and wellbeing journey</p>
                     </div>
                     
                     <div class="articles-grid">
                         <!-- Article 1 -->
                         <div class="article-card fade-in">
-                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ashwagandha" class="article-img">
+                            <div class="animated-element">
+                                <div class="pulse-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
                             <div class="article-content">
                                 <h3>Ashwagandha & Adaptogens</h3>
                                 <p>Discover how adaptogenic herbs like ashwagandha can help your body manage stress and promote balance.</p>
-                                <a href="ashwagandha-adaptogens.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <a href="#ashwagandha-adaptogens" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         
                         <!-- Article 2 -->
                         <div class="article-card fade-in">
-                            <img src="https://images.unsplash.com/photo-1514593214833-49f0c4b0d248?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="CBD Oil" class="article-img">
+                            <div class="animated-element">
+                                <div class="wave-line"></div>
+                            </div>
                             <div class="article-content">
                                 <h3>CBD Oil: Benefits and Uses</h3>
                                 <p>Explore the potential health benefits of CBD oil and how to choose a high-quality product.</p>
-                                <a href="cbd-oil.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <a href="#cbd-oil" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         
                         <!-- Article 3 -->
                         <div class="article-card fade-in">
-                            <img src="https://images.unsplash.com/photo-1593759607110-9a2a5a4af6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Gut Health" class="article-img">
+                            <div class="animated-element">
+                                <div class="rotating-circle"></div>
+                            </div>
                             <div class="article-content">
                                 <h3>Gut-Immune Connection</h3>
                                 <p>Discover the vital connection between your gut health and immune system function.</p>
-                                <a href="gut-immune-connection.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <a href="#gut-immune-connection" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wellness Tips -->
+            <section class="wellness-tips">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Daily Wellness Practices</h2>
+                        <p>Small habits that make a big difference to your wellbeing</p>
+                    </div>
+                    
+                    <div class="tips-container">
+                        <div class="tip-card fade-in">
+                            <div class="tip-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3>Morning Rituals</h3>
+                            <p>Start your day with intention through mindful practices that set a positive tone.</p>
+                        </div>
+                        
+                        <div class="tip-card fade-in">
+                            <div class="tip-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Mindful Nutrition</h3>
+                            <p>Nourish your body with whole foods that provide essential vitamins and minerals.</p>
+                        </div>
+                        
+                        <div class="tip-card fade-in">
+                            <div class="tip-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h3>Stress Management</h3>
+                            <p>Incorporate practices that help manage stress and promote mental clarity.</p>
                         </div>
                     </div>
                 </div>
@@ -589,13 +886,10 @@
                 <div class="container">
                     <div class="about-content">
                         <div class="about-text">
-                            <h2>About HealthVaccinations</h2>
-                            <p>We are a team of health enthusiasts and researchers dedicated to providing accurate, evidence-based health information to our readers.</p>
-                            <p>Our mission is to empower you with knowledge that helps you make informed decisions about your health and wellness journey.</p>
+                            <h2>Our Wellness Philosophy</h2>
+                            <p>At VitaWellness, we believe that true health comes from a balanced approach that nourishes both body and mind. Our team of wellness advocates and researchers are dedicated to providing accurate, evidence-based information you can trust.</p>
+                            <p>We're committed to helping you navigate the world of vitamins, supplements, and holistic practices with clarity and confidence.</p>
                             <a href="#about" class="btn" data-page="about">Learn More About Us</a>
-                        </div>
-                        <div class="about-image">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Team">
                         </div>
                     </div>
                 </div>
@@ -604,8 +898,8 @@
             <!-- Newsletter -->
             <section class="newsletter">
                 <div class="container">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>Stay updated with the latest health tips, product reviews, and exclusive offers by subscribing to our weekly newsletter.</p>
+                    <h2>Join Our Wellness Community</h2>
+                    <p>Receive curated health insights, supplement guidance, and exclusive wellness tips delivered to your inbox.</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Enter your email address" required>
                         <button type="submit" class="btn btn-secondary">Subscribe</button>
@@ -623,91 +917,121 @@
                 <div class="articles-grid">
                     <!-- Article 1 - Ashwagandha -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ashwagandha" class="article-img">
+                        <div class="animated-element">
+                            <div class="pulse-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                         <div class="article-content">
                             <h3>Ashwagandha & Adaptogens</h3>
                             <p>Discover how adaptogenic herbs like ashwagandha can help your body manage stress and promote balance.</p>
-                            <a href="ashwagandha-adaptogens.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#ashwagandha-adaptogens" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 2 - CBD Oil -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1514593214833-49f0c4b0d248?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="CBD Oil" class="article-img">
+                        <div class="animated-element">
+                            <div class="wave-line"></div>
+                        </div>
                         <div class="article-content">
                             <h3>CBD Oil: Benefits and Uses</h3>
                             <p>Explore the potential health benefits of CBD oil and how to choose a high-quality product.</p>
-                            <a href="cbd-oil.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#cbd-oil" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 3 - Gut Health -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1593759607110-9a2a5a4af6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Gut Health" class="article-img">
+                        <div class="animated-element">
+                            <div class="rotating-circle"></div>
+                        </div>
                         <div class="article-content">
                             <h3>Gut-Immune Connection</h3>
                             <p>Discover the vital connection between your gut health and immune system function.</p>
-                            <a href="gut-immune-connection.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#gut-immune-connection" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 4 - Immune Support -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1571019614247-c64ccb7136c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Immune Support" class="article-img">
+                        <div class="animated-element">
+                            <div class="pulse-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                         <div class="article-content">
                             <h3>Natural Immune Support</h3>
                             <p>Learn about evidence-based strategies to support your immune system naturally.</p>
-                            <a href="immune-support.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#immune-support" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 5 - Magnesium -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1593085260707-5377ba37f868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Magnesium" class="article-img">
+                        <div class="animated-element">
+                            <div class="wave-line"></div>
+                        </div>
                         <div class="article-content">
                             <h3>Magnesium: The Essential Mineral</h3>
                             <p>Discover why magnesium is crucial for hundreds of biochemical reactions in your body.</p>
-                            <a href="magnesium.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#magnesium" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 6 - Natural Energy -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Natural Energy" class="article-img">
+                        <div class="animated-element">
+                            <div class="rotating-circle"></div>
+                        </div>
                         <div class="article-content">
                             <h3>Natural Energy Boosters</h3>
                             <p>Discover natural ways to boost your energy levels without relying on stimulants.</p>
-                            <a href="natural-energy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#natural-energy" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 7 - Supplement Stack -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Supplement Stack" class="article-img">
+                        <div class="animated-element">
+                            <div class="pulse-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                         <div class="article-content">
                             <h3>Building Your Supplement Stack</h3>
                             <p>Learn how to create an effective supplement regimen tailored to your specific health needs.</p>
-                            <a href="supplement-stack.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#supplement-stack" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 8 - Vitamin D -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Vitamin D" class="article-img">
+                        <div class="animated-element">
+                            <div class="wave-line"></div>
+                        </div>
                         <div class="article-content">
                             <h3>Vitamin D Guide</h3>
                             <p>Learn about the importance of Vitamin D for immune function, bone health, and overall wellness.</p>
-                            <a href="vitamin-d-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#vitamin-d-guide" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
                     <!-- Article 9 - Zinc vs Vitamin C -->
                     <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Zinc vs Vitamin C" class="article-img">
+                        <div class="animated-element">
+                            <div class="rotating-circle"></div>
+                        </div>
                         <div class="article-content">
                             <h3>Zinc vs Vitamin C: Which is Better?</h3>
                             <p>Compare the immune-supporting benefits of zinc and vitamin C and learn how to use them effectively.</p>
-                            <a href="zinc-vs-vitamin-c.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="#zinc-vs-vitamin-c" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -717,11 +1041,11 @@
         <!-- About Page -->
         <div id="about-page" class="page" style="display: none;">
             <div class="container page-content">
-                <h2>About HealthVaccinations</h2>
+                <h2>About VitaWellness</h2>
                 
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Welcome to HealthVaccinations, your trusted source for evidence-based health information, product reviews, and wellness advice. We are passionate about helping our readers make informed decisions about their health and well-being.</p>
+                        <p>Welcome to VitaWellness, your trusted source for evidence-based health information, product reviews, and wellness advice. We are passionate about helping our readers make informed decisions about their health and well-being.</p>
                         
                         <h3>Our Mission</h3>
                         <p>Our mission is to provide accurate, up-to-date health information that empowers individuals to take control of their health. We believe that everyone deserves access to reliable health resources that can help them live their best lives.</p>
@@ -737,9 +1061,6 @@
                             <li>Respecting the privacy of our users</li>
                             <li>Continuously improving our content based on the latest research</li>
                         </ul>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Our Team">
                     </div>
                 </div>
             </div>
@@ -787,7 +1108,7 @@
                 <div class="policy-content">
                     <div class="policy-section">
                         <h3>Introduction</h3>
-                        <p>At HealthVaccinations, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.</p>
+                        <p>At VitaWellness, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.</p>
                     </div>
                     
                     <div class="policy-section">
@@ -819,31 +1140,6 @@
             </div>
         </div>
 
-        <!-- Disclaimer Page -->
-        <div id="disclaimer-page" class="page" style="display: none;">
-            <div class="container page-content">
-                <h2>Disclaimer</h2>
-                
-                <div class="policy-content">
-                    <div class="policy-section">
-                        <h3>Medical Disclaimer</h3>
-                        <p>The content provided on HealthVaccinations is for informational and educational purposes only. It is not intended to provide medical advice or to take the place of such advice or treatment from a personal physician. All readers/viewers of this content are advised to consult their doctors or qualified health professionals regarding specific health questions.</p>
-                        <p>Neither HealthVaccinations nor the publisher of this content takes responsibility for possible health consequences of any person or persons reading or following the information in this educational content. All viewers of this content, especially those taking prescription or over-the-counter medications, should consult their physicians before beginning any nutrition, supplement, or lifestyle program.</p>
-                    </div>
-                    
-                    <div class="policy-section">
-                        <h3>Affiliate Disclaimer</h3>
-                        <p>HealthVaccinations is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may also participate in other affiliate programs and earn commissions through purchases made through our links.</p>
-                    </div>
-                    
-                    <div class="policy-section">
-                        <h3>Testimonials Disclaimer</h3>
-                        <p>The testimonials, statements, and opinions presented on our website are applicable to the individuals depicted. Results will vary and may not be representative of the experience of others. The testimonials are voluntarily provided and are not paid, nor were they provided with free products or services, or any benefits in exchange for their statements.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Terms of Service Page -->
         <div id="terms-page" class="page" style="display: none;">
             <div class="container page-content">
@@ -852,13 +1148,13 @@
                 <div class="policy-content">
                     <div class="policy-section">
                         <h3>Introduction</h3>
-                        <p>These Terms of Service govern your use of the HealthVaccinations website located at https://www.healthvaccinations.com and any related services provided by HealthVaccinations.</p>
-                        <p>By accessing https://www.healthvaccinations.com, you agree to abide by these Terms of Service and to comply with all applicable laws and regulations. If you do not agree with these Terms of Service, you are prohibited from using or accessing this website or using any other services provided by HealthVaccinations.</p>
+                        <p>These Terms of Service govern your use of the VitaWellness website located at https://www.vitawellness.com and any related services provided by VitaWellness.</p>
+                        <p>By accessing https://www.vitawellness.com, you agree to abide by these Terms of Service and to comply with all applicable laws and regulations. If you do not agree with these Terms of Service, you are prohibited from using or accessing this website or using any other services provided by VitaWellness.</p>
                     </div>
                     
                     <div class="policy-section">
                         <h3>Intellectual Property</h3>
-                        <p>The intellectual property in the materials contained in this website are owned by or licensed to HealthVaccinations and are protected by applicable copyright and trademark law. We grant our users permission to download one copy of the materials for personal, non-commercial transitory use.</p>
+                        <p>The intellectual property in the materials contained in this website are owned by or licensed to VitaWellness and are protected by applicable copyright and trademark law. We grant our users permission to download one copy of the materials for personal, non-commercial transitory use.</p>
                     </div>
                     
                     <div class="policy-section">
@@ -868,7 +1164,7 @@
                     
                     <div class="policy-section">
                         <h3>Limitations of Liability</h3>
-                        <p>HealthVaccinations and its suppliers and licensors will not be hold accountable for any damages that will arise with the use or inability to use the materials on HealthVaccinations's website, even if HealthVaccinations or an authorized representative has been notified, orally or written, of the possibility of such damage.</p>
+                        <p>VitaWellness and its suppliers and licensors will not be hold accountable for any damages that will arise with the use or inability to use the materials on VitaWellness's website, even if VitaWellness or an authorized representative has been notified, orally or written, of the possibility of such damage.</p>
                     </div>
                 </div>
             </div>
@@ -880,14 +1176,25 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>HealthVaccinations</h3>
-                    <p>Your trusted source for evidence-based health information, product reviews, and wellness advice.</p>
+                    <h3>VitaWellness</h3>
+                    <p>Your trusted guide to vitamins, supplements, and holistic wellness practices.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-pinterest"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Wellness Topics</h3>
+                    <ul>
+                        <li><a href="#">Vitamins & Supplements</a></li>
+                        <li><a href="#">Herbal Remedies</a></li>
+                        <li><a href="#">Gut Health</a></li>
+                        <li><a href="#">Mental Wellbeing</a></li>
+                        <li><a href="#">Holistic Practices</a></li>
+                    </ul>
                 </div>
                 
                 <div class="footer-column">
@@ -904,7 +1211,6 @@
                     <h3>Legal</h3>
                     <ul>
                         <li><a href="#privacy" data-page="privacy">Privacy Policy</a></li>
-                        <li><a href="#disclaimer" data-page="disclaimer">Disclaimer</a></li>
                         <li><a href="#terms" data-page="terms">Terms of Service</a></li>
                     </ul>
                 </div>
@@ -914,16 +1220,18 @@
                     <ul>
                         <li><i class="fas fa-envelope"></i> info@healthvaccinations.com</li>
                         <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-5PM</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nature's Way, Wellness City</li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 HealthVaccinations. All rights reserved.</p>
+                <p>&copy; 2023 VitaWellness. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         // Navigation functionality
         document.addEventListener('DOMContentLoaded', function() {
@@ -960,6 +1268,16 @@
             // Mobile menu toggle
             hamburger.addEventListener('click', function() {
                 navMenu.classList.toggle('active');
+                
+                // Toggle hamburger icon
+                const icon = hamburger.querySelector('i');
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
             });
             
             // Contact form submission
@@ -977,7 +1295,7 @@
             if (newsletterForm) {
                 newsletterForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    alert('Thank you for subscribing to our newsletter!');
+                    alert('Thank you for joining our wellness community!');
                     newsletterForm.reset();
                 });
             }
@@ -991,8 +1309,7 @@
                     const screenPosition = window.innerHeight / 1.3;
                     
                     if (elementPosition < screenPosition) {
-                        element.style.opacity = 1;
-                        element.style.transform = 'translateY(0)';
+                        element.classList.add('visible');
                     }
                 });
             }
@@ -1002,6 +1319,20 @@
             
             // Listen for scroll events
             window.addEventListener('scroll', checkScroll);
+            
+            // Smooth scrolling for internal links
+            $("a[data-page]").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
     </script>
 </body>
